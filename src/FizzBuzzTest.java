@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
     @Test
     void testFizz3(){
-        int number = 3;
-        String expected = "Fizz";
+        int number = -3;
+        String expected = "Out of range";
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
     }
@@ -29,6 +29,13 @@ public class FizzBuzzTest {
         int number = 15;
         String expected = "FizzBuzz";
 
+        String result = FizzBuzz.fizzBuzz(number);
+        assertEquals(expected, result);
+    }
+    @Test
+    void testFizzBuzz11(){
+        int number = 11;
+        String expected = "Eleven";
         String result = FizzBuzz.fizzBuzz(number);
         assertEquals(expected, result);
     }
